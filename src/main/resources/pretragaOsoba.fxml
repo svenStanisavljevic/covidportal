@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.sample.PretragaOsobaController">
+   <children>
+       <fx:include fx:id="izbornik" source="izbornik.fxml" />
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="152.0" layoutY="388.0" prefHeight="45.0" prefWidth="331.0" text="Ime ili prezime osobe:" textAlignment="JUSTIFY">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <Label alignment="TOP_CENTER" layoutX="874.0" layoutY="106.0" text="Pretraživanje osoba" textAlignment="CENTER">
+         <font>
+            <Font name="Bauhaus 93" size="69.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fieldPretraga" layoutX="501.0" layoutY="378.0">
+         <font>
+            <Font size="30.0" />
+         </font></TextField>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="189.0" layoutY="460.0" mnemonicParsing="false" onAction="#dohvacanjeOsoba" text="Pretraži" textAlignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font></Button>
+      <TableView fx:id="tablicaOsoba" layoutX="6.0" layoutY="635.0" prefHeight="444.0" prefWidth="1909.0">
+         <columns>
+            <TableColumn fx:id="imeStupac" prefWidth="265.0" text="Ime" />
+            <TableColumn fx:id="prezimeStupac" prefWidth="403.0" text="Prezime" />
+            <TableColumn fx:id="dobStupac" prefWidth="97.0" text="Dob" />
+            <TableColumn fx:id="zupanijaStupac" prefWidth="754.0" text="Županija prebivališta" />
+            <TableColumn fx:id="zarazenStupac" prefWidth="389.0" text="Zaražen" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

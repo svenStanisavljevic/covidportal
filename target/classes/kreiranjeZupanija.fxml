@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.sample.KreiranjeZupanijaController">
+   <fx:include fx:id="izbornik" source="izbornik.fxml" />
+   <children>
+      <Label layoutX="740.0" layoutY="78.0" prefHeight="78.0" prefWidth="440.0" text="Unos županije">
+         <font>
+            <Font name="Bauhaus 93" size="69.0" />
+         </font>
+      </Label>
+      <Label layoutX="230.0" layoutY="312.0" text="Naziv:">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="230.0" layoutY="429.0" text="Broj Stanovnika:">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="230.0" layoutY="550.0" text="Broj zaraženih:">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="naziv" layoutX="230.0" layoutY="357.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="brojStanovnika" layoutX="230.0" layoutY="474.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="brojZarazenih" layoutX="230.0" layoutY="595.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </TextField>
+      <Button layoutX="860.0" layoutY="497.0" mnemonicParsing="false" onAction="#kreirajZupaniju" text="Dodaj">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
